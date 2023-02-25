@@ -1,0 +1,61 @@
+body {
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+header {
+    background: rgba(16, 144, 216, 0.1);
+}
+
+header div div h2 {
+    font-size: 45px;
+}
+
+/* main section */
+.left-content {
+    width: 67%;
+}
+
+.right-content {
+    width: 33%;
+    height: 450px;
+}
+
+.right-content div {
+    height: 500px;
+    /* overflow: scroll; */
+}
+
+input {
+    width: 95px;
+    height: 32px;
+    border: none;
+    background: #F1F1F1;
+    border-radius: 5px;
+}
+
+.cm {
+    padding: 0 5px;
+}
+
+.card-img-top {
+    height: 195px;
+    width: auto;
+}
+
+/* area of calculation */
+td {
+    padding: 5px 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* different background color */
+.card {
+    transition: background-color 0.5s;
+}
+
+.card:hover {
+    cursor: pointer;
+    color: #ffff;
+}

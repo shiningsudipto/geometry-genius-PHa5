@@ -1,0 +1,10 @@
+@media screen and (max-width: 576px) {
+    .left-content {
+        width: 100%;
+    }
+
+    .right-content {
+
+        width: 100%;
+    }
+}

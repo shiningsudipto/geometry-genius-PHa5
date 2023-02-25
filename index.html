@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reponsive.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="mt-5 rounded-2 p-4">
+        <div class="d-block d-md-flex text-center justify-content-between">
+            <div>
+                <h2 class="">Interactive</h2>
+                <p class="fw-medium fs-3">Geometry Genius</p>
+            </div>
+            <div class="d-flex align-items-center justify-content-center">
+                <a href="./pages/blog.html"><button class="btn btn-primary px-4 fw-bold fs-5">Blog</button></a>
+
+            </div>
+        </div>
+    </header>
+    <!-- Geometry section start -->
+    <main class="my-5 d-md-flex d-block justify-content-between">
+        <div class="left-content">
+            <div class="row row-cols-1 row-cols-md-3 g-3">
+                <!-- Triangle -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./images/triangle.png" class="card-img-top py-4 px-5" alt="...">
+                        <div class="card-body text-center">
+                            <h5 id="triangle" class="card-title ">Triangle</h5>
+                            <p class="card-text">Area (A) = 0.5 <i class="bi bi-x-lg"></i> b <i class="bi bi-x-lg"></i>
+                                h</p>
+                            <div class="">
+                                <div class="d-flex justify-content-center">
+                                    <input class="p-2" id="triangleb" placeholder="b" type="number">
+                                    <p class="cm"> cm </p>
+                                    <input class="p-2" id="triangleh" placeholder="h" type="number">
+                                    <p class="cm">cm</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button id="triangle-calculate"
+                            class="btn btn-primary px-4 fw-bold fs-5 mx-4 my-5">Calculate</button>
+                    </div>
+                </div>
+                <!-- Rectangle -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./images/rectangle.png" class="card-img-top p-4" alt="...">
+                        <div class="card-body text-center">
+                            <h5 id="rectangle" class="card-title ">Rectangle</h5>
+                            <p class="card-text">Area (A) = w <i class="bi bi-x-lg"></i> l</p>
+                            <div class="">
+                                <div class="d-flex justify-content-center">
+                                    <input class="p-2" id="rectangle-w" placeholder="w" type="number">
+                                    <p class="cm"> cm </p>
+                                    <input class="p-2" id="rectangle-l" placeholder="l" type="number">
+                                    <p class="cm">cm</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button id="rectangle-calculate"
+                            class="btn btn-primary px-4 fw-bold fs-5 mx-4 my-5">Calculate</button>
+                    </div>
+                </div>
+                <!-- Parallelogram -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./images/parallelogram.png" class="card-img-top p-4" alt="...">
+                        <div class="card-body text-center">
+                            <h5 id="Parallelogram" class="card-title ">Parallelogram</h5>
+                            <p class="card-text">Area (A) = b <i class="bi bi-x-lg"></i> h</p>
+                            <p>b = <span id="parallelogram-b">10</span> cm, h = <span id="Parallelogram-h">12</span>
+                                cm</p>
+                        </div>
+                        <button id="parallelogram-calculate"
+                            class="btn btn-primary px-4 fw-bold fs-5 mx-4 my-5">Calculate</button>
+                    </div>
+                </div>
+                <!-- Rhombus -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./images/rhombus.png" class="card-img-top py-4 px-5" alt="...">
+                        <div class="card-body text-center">
+                            <h5 id="rhombus" class="card-title ">Rhombus</h5>
+                            <p class="card-text">Area (A) = 0.5 <i class="bi bi-x-lg"></i> d <sub>1</sub><i
+                                    class="bi bi-x-lg"></i> d <sub>2</sub> </p>
+                            <p>d<sub>1</sub> = <span id="rhombus-b1">16</span>cm, d<sub>2</sub> = <span
+                                    id="rhombus-b2">8</span>cm</p>
+                        </div>
+                        <button id="rhombus-calculate"
+                            class="btn btn-primary px-4 fw-bold fs-5 mx-4 my-5">Calculate</button>
+                    </div>
+                </div>
+                <!-- Pentagon -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./images/pentagon.png" class="card-img-top px-5 mx-2 py-4" alt="...">
+                        <div class="card-body text-center">
+                            <h5 id="pentagon" class="card-title ">Pentagon</h5>
+                            <p class="card-text">Area (A) = 0.5 <i class="bi bi-x-lg"></i> p <i class="bi bi-x-lg"></i>
+                                b</p>
+                            <p>p = <span id="pentagon-p">6</span>cm, b = <span id="pentagon-b">10</span>cm</p>
+                        </div>
+                        <button id="pentagon-calculate"
+                            class="btn btn-primary px-4 fw-bold fs-5 mx-4 my-5">Calculate</button>
+                    </div>
+                </div>
+                <!-- Ellipse -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./images/ellipse.png" class="card-img-top px-5 py-4" alt="...">
+                        <div class="card-body text-center">
+                            <h5 id="ellipse" class="card-title ">Ellipse</h5>
+                            <p class="card-text">Area (A) = &pi;ab</p>
+                            <p>a = <span id="ellipse-a">10</span>cm, b = <span id="ellipse-b">4</span>cm</p>
+                        </div>
+                        <button id="ellipse-calculate"
+                            class="btn btn-primary px-4 fw-bold fs-5 mx-4 my-5">Calculate</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Calculation area -->
+        <div class="right-content mb-5 mb-md-0 my-5 my-md-0">
+            <div class="p-1 mx-md-3 mx-0  border border-1 rounded ">
+                <table>
+                    <h3 class="text-center py-2"><u> Area Calculation</u></h3>
+                    <tbody id="display-data">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
